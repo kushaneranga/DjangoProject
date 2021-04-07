@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- main css -->
-    <link rel="stylesheet" href="Assets/main.css">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
     <!-- main css end-->
     <!-- front -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +33,7 @@
                     </div>
                     <div class="logo">
                         <a href="#">
-                            <img src="Assets/img/icon/kisspng-logo-dragon-graphic-design-dragon-logo-5ade0b787516d5.1274049715245013684796.png" alt="logo">
+                            <img src="{% static "img/icon/kisspng-logo-dragon-graphic-design-dragon-logo-5ade0b787516d5.1274049715245013684796.png" alt="logo" %}">
                         </a>
                     </div>
                     <div class="account_ship">
@@ -76,7 +77,7 @@
         <!-- main contents end -->
         <!-- main poster -->
         <div class="poster">
-            <img src="Assets/img/png/AdobeStock_320686681_Preview.jpg" alt="woman">
+            <img src="{% static "img/png/AdobeStock_320686681_Preview.jpg" alt="woman" %}">
             <div class="poster_text">
                 <div class="poster_text_subheading">
                     <h2>MAD FOR SUMMER</h2>
@@ -100,13 +101,13 @@
                     <div class="gallery_row">
                         <div class="fistrow_img">
                             <a href="#" class="gallery_link">
-                                <img src="Assets/img/png/adult-1869621_1920.jpg" alt="boy_img">
+                                <img src="{% static "img/png/adult-1869621_1920.jpg" alt="boy_img" %}">
                                 <span> COLLECTION FOR LADIES </span>
                             </a>
                         </div>
                         <div class="fistrow_img">
                             <a href="#" class="gallery_link">
-                                <img src="Assets/img/png/photographer-1150052_1920.jpg" alt="boy_img">
+                                <img src="{% static "img/png/photographer-1150052_1920.jpg" alt="boy_img" %}">
                                 <span> COLLECTION FOR LADIES </span>
                             </a>
                         </div>
@@ -114,19 +115,19 @@
                     <div class="gallery_row" id="row_sp">
                         <div class="secondrow_img">
                             <a href="#" class="gallery_link"> 
-                                <img src="Assets/img/png/girl-1868930_1920.jpg" alt="girl_img">
+                                <img src="{% static "img/png/girl-1868930_1920.jpg" alt="girl_img" %}">
                                 <span> SEE LOOKBOOK </span>
                             </a>
                         </div>
                         <div class="secondrow_img">
                             <a href="#" class="gallery_link">
-                                <img src="Assets/img/png/zach-vessels-1nqlINxFPOc-unsplash.jpg" alt="boy_img">
+                                <img src="{% static "img/png/zach-vessels-1nqlINxFPOc-unsplash.jpg" alt="boy_img" %}">
                                 <span> SHOE ACCESSORIES </span>
                             </a>
                         </div>
                         <div class="secondrow_img">
                             <a href="#" class="gallery_link">
-                                <img src="Assets/img/png/man-5886719_1920.jpg" alt="man_img">
+                                <img src="{% static "img/png/man-5886719_1920.jpg" alt="man_img" %}">
                                 <span> SALE UP TO 70% OFF </span>
                             </a>
                         </div>
@@ -141,9 +142,9 @@
                 <div class="featured_area3">
                     <div class="featured">
                         <h1>
-                            <span><img src="Assets/img/icon/creativesimple2.png" alt=""></span>
+                            <span><img src="{% static "img/icon/creativesimple2.png" alt="icon" %}"></span>
                             Featured
-                            <span><img src="Assets/img/icon/creativesimple2.png" alt=""></span>
+                            <span><img src="{% static "img/icon/creativesimple2.png" alt="icon" %}"></span>
                         </h1>
                     </div> 
                 </div>
@@ -157,8 +158,8 @@
                     <div class="items_rows">
                         <div class="items">
                             <div class="item_img">
-                                <img src="Assets/img/png/fabian-heimann-4R_WEmhx8og-unsplash.jpg" alt="sales item">
-                                <div class="sale_tag"><img src="Assets/img/icon/sale.png" alt="sale"></div>
+                                <img src="{% static "img/png/fabian-heimann-4R_WEmhx8og-unsplash.jpg" alt="sales item" %}">
+                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
                             </div>
                             <div class="item_detail">
                                 <h1>Lorem ipsum dolor</h1>
@@ -168,7 +169,7 @@
                         </div>
                         <div class="items">
                             <div class="item_img">
-                                <img src="Assets/img/png/kouji-tsuru-btDoDMsVnZc-unsplash.jpg" alt="sales item">
+                                <img src="{% static "img/png/kouji-tsuru-btDoDMsVnZc-unsplash.jpg" alt="sales item" %}">
                             </div>
                             <div class="item_detail">
                                 <h1>Lorem ipsum dolor</h1>
@@ -178,7 +179,7 @@
                         </div>
                         <div class="items">
                             <div class="item_img">
-                                <img src="Assets/img/png/sebastian-coman-travel-dtOTQYmTEs0-unsplash.jpg" alt="sales item">
+                                <img src="{% static "img/png/sebastian-coman-travel-dtOTQYmTEs0-unsplash.jpg" alt="sales item" %}">
                             </div>
                             <div class="item_detail">
                                 <h1>Lorem ipsum dolor</h1>
@@ -188,8 +189,8 @@
                         </div>
                         <div class="items">
                             <div class="item_img">
-                                <img src="Assets/img/png/lina-verovaya-TeBKnxH_9XA-unsplash.jpg" alt="sales item">
-                                <div class="sale_tag"><img src="Assets/img/icon/sale.png" alt="sale"></div>
+                                <img src="{% static "img/png/lina-verovaya-TeBKnxH_9XA-unsplash.jpg" alt="sales item" %}">
+                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
                             </div>
                             <div class="item_detail">
                                 <h1>Lorem ipsum dolor</h1>
