@@ -1,4 +1,5 @@
 {% load static %}
+{% static "img/png" as baseUrl %} <!-- Images path -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,7 +160,7 @@
                     <div class="items_rows">
                         <div class="items">
                             <div class="item_img">
-                                <img src="{% static "img/png/fabian-heimann-4R_WEmhx8og-unsplash.jpg" alt="sales item" %}">
+                                <img src="{{baseUrl}}/{{typc1.img}}" alt="sales item" >
                                 <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
                             </div>
                             <div class="item_detail">
