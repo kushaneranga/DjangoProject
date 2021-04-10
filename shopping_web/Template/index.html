@@ -156,141 +156,22 @@
         <div class="items_area">
             <div class="items_area2">
                 <div class="items_area3">
-                    <!-- 1st items row -->
+                    {% for typc in typcs %}
+                    <!-- items row -->
                     <div class="items_rows">
                         <div class="items">
                             <div class="item_img">
-                                <img src="{{baseUrl}}/{{typc1.img}}" alt="sales item" >
+                                <img src="{{baseUrl}}/{{typc.img}}" alt="sales item" >
                                 <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
                             </div>
                             <div class="item_detail">
-                                <h1>{{typc1.name}}</h1>
-                                <h2><del>${{typc1.oldprice}}</del></h2>
-                                <h3>${{typc1.newprice}}</h3>
-                            </div>
-                        </div>
-                        {% comment %} <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/kouji-tsuru-btDoDMsVnZc-unsplash.jpg" alt="sales item" %}">
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/sebastian-coman-travel-dtOTQYmTEs0-unsplash.jpg" alt="sales item" %}">
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/lina-verovaya-TeBKnxH_9XA-unsplash.jpg" alt="sales item" %}">
-                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div> {% endcomment %}
-                    </div>
-                    {% comment %} <!-- 2nd items row -->
-                    <div class="items_rows">
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/barrett-ward-P44RIGl9V54-unsplash.jpg" alt="sales item" %}">
-                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/patrick-hendry-lsJsaERGu4c-unsplash.jpg" alt="sales item" %}">
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/waldemar-brandt-UP9DtTjRYpI-unsplash.jpg" alt="sales item" %}">
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/artem-beliaikin-hg9da2n4QD8-unsplash.jpg" alt="sales item" %}">
-                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
+                                <h1>{{typc.name}}</h1>
+                                <h2><del>${{typc.oldprice}}</del></h2>
+                                <h3>${{typc.newprice}}</h3>
                             </div>
                         </div>
                     </div>
-                    <!-- 3rd items row -->
-                    <div class="items_rows">
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/samsung-memory-UePOidInpmM-unsplash.jpg" alt="sales item" %}">
-                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/artem-beliaikin-1mVCRX4s9bI-unsplash.jpg" alt="sales item" %}">
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/handbag-1478814_1920.jpg" alt="sales item" %}">
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item_img">
-                                <img src="{% static "img/png/erol-ahmed-9XiN0r2NWSM-unsplash.jpg" alt="sales item" %}">
-                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
-                            </div>
-                            <div class="item_detail">
-                                <h1>Lorem ipsum dolor</h1>
-                                <h2><del>$170,000</del></h2>
-                                <h3>$150,000</h3>
-                            </div>
-                        </div>
-                    </div> {% endcomment %}
+                    {% endfor %}
                     <!-- end items row -->
                 </div>
             </div>
