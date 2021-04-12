@@ -19,7 +19,6 @@ def main(request):
     typc2.oldprice = '170,000'
     typc2.newprice = '150,000'
     typc2.img = 'kouji-tsuru-btDoDMsVnZc-unsplash.jpg'
-    typc2.sale = None
 
     typc3 = TypesCode()
     typc3.name = 'Lorem ipsum dolor'
