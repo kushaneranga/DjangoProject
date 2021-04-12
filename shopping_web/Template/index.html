@@ -1,5 +1,6 @@
 {% load static %}
 {% static "img/png" as baseUrl %} <!-- Images path -->
+{% static "img/icon" as iconUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,8 +162,8 @@
                     <div class="items_rows">
                         <div class="items">
                             <div class="item_img">
-                                <img src="{{baseUrl}}/{{typc.img}}" alt="sales item" >
-                                <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
+                                <img src="{{baseUrl}}/{{typc.img}}" alt="sales item">
+                                <div class="sale_tag"><img src="{{iconUrl}}/{{typc.sale}}" alt="sale"></div>
                             </div>
                             <div class="item_detail">
                                 <h1>{{typc.name}}</h1>

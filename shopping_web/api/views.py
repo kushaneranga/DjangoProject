@@ -12,12 +12,14 @@ def main(request):
     typc1.oldprice = '170,000'
     typc1.newprice = '150,000'
     typc1.img = 'fabian-heimann-4R_WEmhx8og-unsplash.jpg'
+    typc1.sale = 'sale.png'
 
     typc2 = TypesCode()
     typc2.name = 'Lorem ipsum dolor'
     typc2.oldprice = '170,000'
     typc2.newprice = '150,000'
     typc2.img = 'kouji-tsuru-btDoDMsVnZc-unsplash.jpg'
+    typc2.sale = None
 
     typc3 = TypesCode()
     typc3.name = 'Lorem ipsum dolor'
