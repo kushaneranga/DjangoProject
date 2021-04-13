@@ -7,5 +7,5 @@ class TypesCode(models.Model):
     oldprice = models.TextField()
     newprice = models.TextField()
     img = models.ImageField(upload_to='img/png')
-    sale: str
+    sale = models.BooleanField(default=False)
    
