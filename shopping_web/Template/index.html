@@ -161,7 +161,7 @@
                     <div class="items_rows">
                         <div class="items">
                             <div class="item_img">
-                                <img src="{{baseUrl}}/{{typc.img}}" alt="sales item">
+                                <img src="{{typc.img.url}}" alt="sales item"> <!-- <img src="{{baseUrl}}/{{typc.img}}" alt="sales item"> This is old (no sql) -->
                                 {% if typc.sale %} <!-- sale tag -->
                                 <div class="sale_tag"><img src="{% static "img/icon/sale.png" alt="sale" %}"></div>
                                 {% endif %} <!-- sale tag end -->
