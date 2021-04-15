@@ -6,6 +6,6 @@ class TypesCode(models.Model):
     name = models.CharField(max_length=100)
     oldprice = models.TextField()
     newprice = models.TextField()
-    img = models.ImageField(upload_to='img/png')
+    img = models.ImageField(upload_to='pics')
     sale = models.BooleanField(default=False)
    
